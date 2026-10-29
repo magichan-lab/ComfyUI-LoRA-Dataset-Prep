@@ -1,0 +1,21 @@
+[project]
+name = "comfyui-lora-dataset-prep"
+version = "0.1.0"
+description = "Batch upscale images and generate matching LoRA training captions in ComfyUI"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+dependencies = [
+    "transformers>=4.57.0,<5",
+    "accelerate>=1.0.0",
+    "safetensors",
+    "pillow",
+]
+
+[project.urls]
+Repository = "https://github.com/magichan-lab/ComfyUI-LoRA-Dataset-Prep"
+
+[tool.comfy]
+PublisherId = "replace-with-your-publisher-id"
+DisplayName = "LoRA Dataset Prep"
+
